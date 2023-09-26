@@ -1,0 +1,356 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.useLc {
+  background: #f0f0f0;
+  height: 102px;
+  padding: 20px 0;
+  color: #333;
+}
+
+.useLc .wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.useLc .wrap .lcTit {
+  float: left;
+  font-size: 20px;
+  width: 60px;
+  height: 64px;
+  line-height: 32px;
+  padding-left: 11px;
+  border-left: 6px #fe5341 solid;
+}
+
+.useLc .wrap .lcList {
+  float: left;
+  color: #737373;
+}
+
+.useLc .wrap .lcList dt {
+  width: 188px;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+}
+
+.useLc .wrap .lcList dt img {
+  display: block;
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.useLc .wrap .lcList dt:nth-child(1) p {
+  display: inline-block;
+  border-bottom: 2px solid #fe5341;
+}
+
+.useIntro {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.useIntro .useDetial {
+  margin-top: 25px;
+  font-size: 16px;
+  width: 700px;
+  float: left;
+}
+
+.useIntro .useDetial .title {
+  padding: 15px 0 13px 0;
+  font-size: 20px;
+  color: #474747;
+}
+
+.useIntro .useDetial .title p {
+  padding: 3px 0 3px 16px;
+  border-left: 6px #fe5341 solid;
+}
+
+.useIntro .useDetial .text p {
+  margin: 4px 0;
+}
+
+.useIntro .useDetial .text img {
+  margin: 9px 0;
+}
+
+.useIntro .useDetial .text .little {
+  font-weight: bold;
+  color: #0070c0;
+}
+
+.useIntro .useDetial .text .red {
+  color: red;
+  font-weight: bold;
+}
+
+.useIntro .listR {
+  margin-top: 25px;
+  width: 270px;
+  float: right;
+}
+
+.useIntro .listR .gm {
+  color: #474747;
+}
+
+.useIntro .listR .gm h2 {
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  padding-left: 28px;
+  border-left: 6px #fe5341 solid;
+}
+
+.useIntro .listR .gm .money {
+  color: #fe5341;
+  font-size: 40px;
+  padding: 20px 0 15px;
+}
+
+.useIntro .listR .gm .buyBtn {
+  display: block;
+  color: #fff;
+  background: #fe5341;
+  height: 48px;
+  border-radius: 5px;
+  line-height: 48px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.useIntro .listR .gm .resource {
+  color: #a3a3a3;
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.useIntro .listR .ty h2 {
+  position: relative;
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 30px;
+  color: #474747;
+}
+
+.useIntro .listR .ty h2:after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 25px;
+  left: 0;
+  top: 0;
+  background: #fe5341;
+}
+
+.useIntro .listR .ty img {
+  margin-top: 20px;
+}
+
+.useIntro .listR .ty .info {
+  margin: 10px 0 20px 0;
+}
+
+.useIntro .listR .ty .info h5 {
+  color: #474747;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.useIntro .listR .ty .info p {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+.useIntro .listR .guanzhu {
+  padding-top: 40px;
+}
+
+.useIntro .listR .guanzhu h2 {
+  position: relative;
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 30px;
+  color: #474747;
+}
+
+.useIntro .listR .guanzhu h2:after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 25px;
+  left: 0;
+  top: 0;
+  background: #fe5341;
+}
+
+.useIntro .listR .guanzhu .imgBox {
+  margin-top: 20px;
+}
+
+.useBtm {
+  margin-bottom: 25px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.useBtm .title {
+  position: relative;
+}
+
+.useBtm .title .more {
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  top: 22px;
+  padding-right: 17px;
+  font-size: 14px;
+  background: url(../../img/css/img/readMore.png) no-repeat right 4px;
+  color: #fd6959;
+}
+
+.useBtm .appCenter {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.useBtm .appCenter .appIn {
+  position: relative;
+  width: 220px;
+  height: 285px;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 25px;
+  overflow: hidden;
+  border: 1px solid #E6E9E9;
+  /* 鼠标悬浮在模块上时变色动画 */
+}
+
+.useBtm .appCenter .appIn:nth-of-type(16) {
+  display: none;
+}
+
+.useBtm .appCenter .appIn .lab {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #fe5341;
+  z-index: 2;
+  border-radius: 0 5px 0 8px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.useBtm .appCenter .appIn:nth-of-type(2) .lab {
+  width: 76px;
+  background: #fbf4cb;
+  color: #c4a96a;
+}
+
+.useBtm .appCenter .appIn:hover img {
+  animation: fade 1.2s ease-in infinite both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.useBtm .appCenter .appIn:nth-of-type(4) {
+  margin: 0;
+}
+
+.useBtm .appCenter .appIn img {
+  display: block;
+  width: 220px;
+  height: 130px;
+}
+
+.useBtm .appCenter .appIn .appContext {
+  width: 220px;
+  padding: 8px 8px 14px;
+}
+
+.useBtm .appCenter .appIn .appContext p {
+  text-align: center;
+}
+
+.useBtm .appCenter .appIn .appContext p:nth-of-type(1) {
+  height: 48px;
+  font-weight: bolder;
+}
+
+.useBtm .appCenter .appIn .appContext p:nth-of-type(1):nth-of-type(1) {
+  /* 文本超出部分变省略号 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.useBtm .appCenter .appIn .appContext p:nth-of-type(2) span {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #fe5341;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fe5341;
+}
+
+.useBtm .appCenter .appIn .appContext p:nth-of-type(2) span:nth-of-type(2) {
+  width: 48px;
+  margin-left: 10px;
+}
+
+.useBtm .appCenter .appIn .appContext p:nth-of-type(3) {
+  height: 28px;
+  line-height: 28px;
+}
+
+.useBtm .appCenter .appIn .appContext p:nth-of-type(3) span {
+  color: #fe5341;
+}
+
+.useBtm .appCenter .appIn .appContext p:nth-of-type(4) {
+  color: #fe5341;
+}
+
+.useBtm .appCenter .appIn:nth-of-type(2) > .appContext > p:nth-of-type(2) > span {
+  border: 1px solid #80c269;
+  color: #80c269;
+}
+
+.useBtm .appCenter .appIn:nth-of-type(2) > .appContext > p:nth-of-type(4) {
+  color: #80c269;
+}

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #535353;
+}
+.content {
+  width: 1000px;
+  overflow: hidden;
+  margin: 0px auto;
+  padding: 50px 0;
+}
+.content .left {
+  width: 270px;
+  height: 320px;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: #f7f7f7;
+}
+.content .left h2 {
+  color: #444;
+  padding-left: 18px;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 900;
+  border-bottom: 1px solid #a0a0a0;
+}
+.content .left dl {
+  padding: 10px 18px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.content .left dl dt a {
+  font-weight: 700;
+}
+.content .left dl dd {
+  padding-left: 15px;
+}
+.content .right {
+  width: 700px;
+  float: right;
+  border-radius: 7px;
+  padding: 20px 33px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+.content .right h2 {
+  color: #444;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 900;
+  border-bottom: 1px solid #a0a0a0;
+}
+.content .right h3 {
+  font-size: 16px;
+  padding: 25px 0 20px;
+  color: #535353;
+  font-weight: bold;
+}
+.content .right p {
+  color: #535353;
+  line-height: 1.8;
+}
+.content .right dl dt {
+  color: #444;
+  font-size: 20px;
+  padding: 18px 0 16px;
+  font-weight: bold;
+}
+.content .right dl dd {
+  padding-left: 25px;
+  line-height: 1.8;
+  color: #535353;
+}

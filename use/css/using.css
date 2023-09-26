@@ -1,0 +1,15 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 正文导航 */
+.itemNavOut .itemNav a:nth-of-type(1),
+.itemNavOut .itemNav a:nth-of-type(2) {
+  color: #999;
+}
+
+.itemNavOut .itemNav a:nth-of-type(3) {
+  color: black;
+}

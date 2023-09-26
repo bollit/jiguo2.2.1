@@ -1,0 +1,134 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 登录界面 */
+.logonUi {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 59, 59, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.logonUi .logonUiIn {
+  position: relative;
+  width: 715px;
+  height: 325px;
+  background-color: #fff;
+  border-radius: 8px;
+  animation: logonUiIn .4s linear;
+}
+
+.logonUi .logonUiIn .del {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 25px;
+  height: 25px;
+  background-color: #999;
+}
+
+@keyframes logonUiIn {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 正文部分 */
+article {
+  height: 846px;
+  background-color: #F7F7F7;
+  padding: 25px 0 35px;
+}
+
+article .articleIn {
+  width: 1000px;
+  height: 786px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #D7D7D7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+article .articleIn p {
+  padding-left: 25px;
+  margin: 20px 0 20px;
+  font-size: 20px;
+  border-left: 6px solid #fe5341;
+}
+
+article .articleIn form {
+  width: 400px;
+  height: 512px;
+  margin: 50px auto 0;
+}
+
+article .articleIn form .notice {
+  color: #FD301B;
+  font-size: 12px;
+  display: none;
+}
+
+article .articleIn form img {
+  vertical-align: middle;
+  margin-left: 30px;
+}
+
+article .articleIn form .getCode {
+  display: inline-block;
+  width: 132px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  border: 1px solid #a3a3a3;
+  border-radius: 8px;
+  margin-left: 15px;
+  color: #a3a3a3;
+  cursor: pointer;
+}
+
+article .articleIn form input {
+  border: 1px solid #EEEEEE;
+  width: 100%;
+  height: 50px;
+  background: #f7f7f7;
+  color: #a3a3a3;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+article .articleIn form input:nth-of-type(2), article .articleIn form input:nth-of-type(3) {
+  width: 245px;
+}
+
+article .articleIn form .submit {
+  background-color: #FE5341;
+  color: #fff;
+  font-size: 20px;
+}
+
+article .articleIn form .submit:hover {
+  background-color: #FD301B;
+}

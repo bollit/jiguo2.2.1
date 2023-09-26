@@ -1,0 +1,153 @@
+/* 清除默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 去除ul/li默认小黑点 */
+ul li {
+  list-style: none;
+}
+/* 去除a链接下划线、默认颜色 */
+a {
+  text-decoration: none;
+}
+.reportBox {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+.reportBox .wrap {
+  width: 1000px;
+  text-align: left;
+  margin: 0 auto;
+}
+.reportBox .wrap .bread {
+  height: 50px;
+  line-height: 50px;
+  color: #a3a3a3;
+  font-size: 12px;
+}
+.reportBox .wrap .bread a {
+  color: #a3a3a3;
+  font-size: 12px;
+}
+.reportBox .wrap .content {
+  overflow: hidden;
+}
+.reportBox .wrap .content .left {
+  width: 700px;
+  float: left;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  background-color: #fff;
+}
+.reportBox .wrap .content .left .topInfo {
+  padding: 24px;
+  border-bottom: 1px #e0e0e0 solid;
+}
+.reportBox .wrap .content .left .topInfo h1 {
+  color: #474747;
+  font-size: 26px;
+  padding-bottom: 15px;
+  font-weight: normal;
+}
+.reportBox .wrap .content .left .topInfo .btm {
+  width: 652px;
+  height: 21px;
+  color: #a3a3a3;
+  font-size: 12px;
+}
+.reportBox .wrap .content .left .topInfo .btm div:nth-of-type(1) {
+  float: left;
+}
+.reportBox .wrap .content .left .topInfo .btm div:nth-of-type(1) .avt {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../../img/css/img/tx.jpg) no-repeat;
+}
+.reportBox .wrap .content .left .topInfo .btm div:nth-of-type(1) span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.reportBox .wrap .content .left .topInfo .btm div:last-child {
+  float: right;
+}
+.reportBox .wrap .content .left .article {
+  font-size: 14px;
+  line-height: 23px;
+  padding: 19px 24px 20px;
+}
+.reportBox .wrap .content .left .article p {
+  margin: 20px 0;
+}
+.reportBox .wrap .content .left .article p:first-child {
+  margin-top: 0px;
+}
+.reportBox .wrap .content .left .article p:nth-of-type(3) {
+  margin-bottom: 0px;
+}
+.reportBox .wrap .content .left .article p:nth-of-type(4) {
+  margin-top: 0px;
+}
+.reportBox .wrap .content .left .article .acenter {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.reportBox .wrap .content .left .article img {
+  width: 100%;
+}
+.reportBox .wrap .content .left ul {
+  padding: 20px 0 35px 20px;
+  font-size: 14px;
+}
+.reportBox .wrap .content .left ul li {
+  margin-bottom: 5px;
+}
+.reportBox .wrap .content .left ul li a {
+  color: #a3a3a3;
+}
+.reportBox .wrap .content .right {
+  width: 270px;
+  height: 110px;
+  float: right;
+  color: #a3a3a3;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0px 0px 5px #d0cfcf;
+}
+.reportBox .wrap .content .right div:nth-of-type(1) {
+  width: 49%;
+  height: 100%;
+  float: left;
+  line-height: 140px;
+  margin-right: 1px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: url(../../img/css/img/xinRedo.png) center 27px no-repeat;
+  background-color: #fff;
+}
+.reportBox .wrap .content .right div:nth-of-type(1):hover {
+  color: #fe5341;
+  background: url(../../img/css/img/xinRedh.png) center 27px no-repeat;
+  background-color: #fff;
+}
+.reportBox .wrap .content .right div:nth-of-type(2) {
+  width: 50%;
+  height: 100%;
+  float: left;
+  line-height: 140px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: url(../../img/css/img/share_yj1.png) center 27px no-repeat;
+  background-color: #fff;
+}
+.reportBox .wrap .content .right div:nth-of-type(2):hover {
+  color: #fe5341;
+  background: url(../../img/css/img/shareh_yj1.png) center 27px no-repeat;
+  background-color: #fff;
+}

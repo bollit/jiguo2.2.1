@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.clearFix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.articlen .wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.articlen .wrap h1 {
+  text-align: center;
+  padding: 34px 0 30px 0;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.articlen .wrap .play-nav {
+  text-align: center;
+  line-height: 45px;
+}
+
+.articlen .wrap .play-nav .on {
+  color: #fe5431;
+  border-bottom: 4px #fe5431 solid;
+  padding-bottom: 8px;
+}
+
+.articlen .wrap .play-nav a {
+  display: inline-block;
+  padding-bottom: 12px;
+  width: 165px;
+  font-size: 18px;
+  color: #A3A4A6;
+}
+
+.articlen .report-box {
+  width: 100%;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.articlen .report-box .report {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 25px;
+  display: block;
+}
+
+.articlen .report-box .report .listInfo {
+  width: 700px;
+  float: left;
+}
+
+.articlen .report-box .report .listInfo ul .li {
+  border-radius: 6px;
+  border: 1px solid #e6e9e9;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.articlen .report-box .report .listInfo ul .li a {
+  width: 700px;
+  height: 412px;
+  display: block;
+}
+
+.articlen .report-box .report .listInfo ul .li a img {
+  width: 700px;
+  height: 412px;
+  border-radius: 6px;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 22px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor p {
+  font-size: 18px;
+  padding: 9px 0 12px 0;
+  font-weight: normal;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm {
+  color: #a3a3a3;
+  font-size: 13px;
+  padding: 16px 0 11px 0;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .left {
+  float: left;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .left .avt {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url("../../img/css/img/tx.jpg") no-repeat;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .left .name {
+  color: #fe695a;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .left span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .right {
+  float: right;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .right .zan {
+  background: url("../../img/css/img/zan.png") no-repeat left center;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .right .look {
+  background: url("../../img/css/img/reply.png") no-repeat left center;
+}
+
+.articlen .report-box .report .listInfo ul .li a .infor .btm .right span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 14px;
+  margin-left: 3px;
+}
+
+.articlen .report-box .report .listInfo ul .li a:hover img {
+  animation: fade 1.2s ease-in infinite both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.articlen .report-box .report .listInfo ul .lis {
+  border-radius: 6px;
+  border: 1px solid #e6e9e9;
+  margin-bottom: 13px;
+  position: relative;
+  overflow: hidden;
+}
+
+.articlen .report-box .report .listInfo ul .lis a {
+  display: block;
+}
+
+.articlen .report-box .report .listInfo ul .lis a .click-look {
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.articlen .report-box .report .listInfo .playMore {
+  padding-top: 22px;
+  color: #a3a3a3;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.articlen .report-box .report .listInfo .playMore .more-btn {
+  background: url(../../img/css/img/more.png) no-repeat left center;
+  background-size: 16px;
+  color: #fe5341;
+  padding-left: 24px;
+}
+
+.articlen .report-box .report .listInfo .playMore .more-btn:nth-of-type(2) {
+  width: 104px;
+  height: 22px;
+  margin: 0 auto;
+  background: url(../../img/css/img/loading-icon.gif) no-repeat left center;
+  background-size: 16px;
+  color: #fe5341;
+  padding-left: 24px;
+  display: none;
+}
+
+.articlen .report-box .report .listR {
+  width: 270px;
+  float: right;
+}
+
+.articlen .report-box .report .listR .ty h2 {
+  position: relative;
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 30px;
+  color: #474747;
+}
+
+.articlen .report-box .report .listR .ty h2:after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 25px;
+  left: 0;
+  top: 0;
+  background: #fe5341;
+}
+
+.articlen .report-box .report .listR .ty img {
+  margin-top: 20px;
+}
+
+.articlen .report-box .report .listR .ty .info {
+  margin: 10px 0 20px 0;
+}
+
+.articlen .report-box .report .listR .ty .info h5 {
+  color: #474747;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.articlen .report-box .report .listR .ty .info p {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+.articlen .report-box .report .listR .guanzhu {
+  padding-top: 40px;
+}
+
+.articlen .report-box .report .listR .guanzhu h2 {
+  position: relative;
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 30px;
+  color: #474747;
+}
+
+.articlen .report-box .report .listR .guanzhu h2:after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 25px;
+  left: 0;
+  top: 0;
+  background: #fe5341;
+}
+
+.articlen .report-box .report .listR .guanzhu .imgBox {
+  margin-top: 20px;
+}
+
+.articlen .report-box .report:nth-of-type(2) {
+  display: none;
+}

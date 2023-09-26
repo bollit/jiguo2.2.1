@@ -1,0 +1,216 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* 头部 */
+header li:nth-of-type(1), header li:nth-of-type(2), header li:nth-of-type(3) {
+  color: black;
+}
+
+header li:nth-of-type(4) {
+  color: #fe5341;
+}
+
+/* 正文部分 */
+.itemNavOut {
+  border-top: 1px solid #E6E9E9;
+}
+
+.itemNavOut .itemNav {
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.itemNavOut .itemNav a {
+  display: inline-block;
+  width: 165px;
+  height: 50px;
+  font-size: 18px;
+  color: #999;
+}
+
+.itemNavOut .itemNav a:nth-of-type(1) {
+  color: black;
+}
+
+article {
+  height: 1401px;
+  background-color: #F7F7F7;
+}
+
+article .articleIn {
+  width: 1000px;
+  height: 1401px;
+  margin: auto;
+  padding-top: 25px;
+}
+
+article .articleIn .appCenter {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* 底部加载 */
+}
+
+article .articleIn .appCenter .appIn {
+  position: relative;
+  width: 220px;
+  height: 285px;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 25px;
+  overflow: hidden;
+  border: 1px solid #E6E9E9;
+  /* 鼠标悬浮在模块上时变色动画 */
+}
+
+article .articleIn .appCenter .appIn:nth-of-type(16) {
+  display: none;
+}
+
+article .articleIn .appCenter .appIn .lab {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #fe5341;
+  z-index: 2;
+  border-radius: 0 5px 0 8px;
+  color: #fff;
+  font-size: 12px;
+}
+
+article .articleIn .appCenter .appIn:nth-of-type(2) .lab {
+  width: 76px;
+  background: #fbf4cb;
+  color: #c4a96a;
+}
+
+article .articleIn .appCenter .appIn:hover img {
+  animation: appIn 2s linear infinite;
+}
+
+@keyframes appIn {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+article .articleIn .appCenter .appIn:nth-of-type(4) {
+  margin: 0;
+}
+
+article .articleIn .appCenter .appIn img {
+  display: block;
+  width: 220px;
+  height: 130px;
+}
+
+article .articleIn .appCenter .appIn .appContext {
+  width: 220px;
+  padding: 8px 8px 14px;
+}
+
+article .articleIn .appCenter .appIn .appContext p {
+  text-align: center;
+}
+
+article .articleIn .appCenter .appIn .appContext p:nth-of-type(1) {
+  height: 48px;
+  font-weight: bolder;
+}
+
+article .articleIn .appCenter .appIn .appContext p:nth-of-type(1):nth-of-type(1) {
+  /* 文本超出部分变省略号 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article .articleIn .appCenter .appIn .appContext p:nth-of-type(2) span {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #fe5341;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fe5341;
+}
+
+article .articleIn .appCenter .appIn .appContext p:nth-of-type(2) span:nth-of-type(2) {
+  width: 48px;
+  margin-left: 10px;
+}
+
+article .articleIn .appCenter .appIn .appContext p:nth-of-type(3) {
+  height: 28px;
+  line-height: 28px;
+}
+
+article .articleIn .appCenter .appIn .appContext p:nth-of-type(3) span {
+  color: #fe5341;
+}
+
+article .articleIn .appCenter .appIn .appContext p:nth-of-type(4) {
+  color: #fe5341;
+}
+
+article .articleIn .appCenter .appIn:nth-of-type(2) > .appContext > p:nth-of-type(2) > span {
+  border: 1px solid #80c269;
+  color: #80c269;
+}
+
+article .articleIn .appCenter .appIn:nth-of-type(2) > .appContext > p:nth-of-type(4) {
+  color: #80c269;
+}
+
+article .articleIn .appCenter .playBottom,
+article .articleIn .appCenter .playBottomload {
+  position: absolute;
+  bottom: -86px;
+  width: 1000px;
+  height: 86px;
+  margin: auto;
+  text-align: center;
+  color: #fe5341;
+  padding: 10px 0 50px;
+}
+
+article .articleIn .appCenter .playBottom img,
+article .articleIn .appCenter .playBottomload img {
+  margin-right: 8px;
+}
+
+article .articleIn .appCenter .playBottomload {
+  display: none;
+}
+
+article .articleIn .appCenter .playBottomload img {
+  margin-right: 10px;
+  vertical-align: top;
+}

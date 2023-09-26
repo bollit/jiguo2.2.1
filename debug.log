@@ -1,0 +1,4 @@
+1、酷玩最新页加载按钮点击无效：
+原因：ajax异步，我将其代码放入了渲染模块。
+解决：将其点击事件放入setInterval，将其变成异步。
+2、HTML5新特性中的sandbox属性sandbox="allow-scripts allow-same-origin allow-popups"可以阻止跳转。

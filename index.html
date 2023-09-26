@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./css/header.min.css">
+    <link rel="stylesheet" href="./css/logon.min.css">
+    <link rel="stylesheet" href="./font_4264626_iw9cyjnpfxj/iconfont.css">
+    <link rel="icon" href="./img/img/logo.ico">
+    <link rel="stylesheet" href="./use/css/apply.min.css">
+    <!-- <link rel="stylesheet" href="./css/regist.min.css"> -->
+    <link rel="stylesheet" href="./font_4264626_gim84ncuwbm/iconfont.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="headerIn"><a href="#"><img src="./img/img/logonew.png" alt=""></a>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./play/new.html">酷玩</a></li>
+                <li><a href="./guid/guidnew.html">导购</a></li>
+                <li><a href="./use/public.html">试用</a></li>
+                <li><a href="./report/index.html">报告</a></li>
+            </ul>
+            <a href="./regist.html">注册</a>
+            <a href="#" class="logon">登录</a>
+            <a href="#"></a>
+            <div class="account"><img src="./img/img/11101Q55255-2-1200.jpg" alt=""></div>
+        </div>
+    </header>
+
+
+    <!-- 登录界面 -->
+    <div class="logonUi">
+        <div class="logonUiIn">
+            <a href="#">But,请先登录！</a>
+            <div class="del">取消</div>
+            <p class="confirm">登录</p>
+        </div>
+
+        <div class="logonUiIn2">
+            <form action="">
+                <p>极果账号登录</p>
+                <label for=""><i class="iconfont icon-shouji"></i><input type="text" id="username1"
+                        placeholder="手机号"></label>
+                <label for=""><i class="iconfont icon-mima"></i><input type="password" id="psd"
+                        placeholder="密码"></label>
+                <div class="div">
+                    <label for=""><input type="checkbox" id="isrember">下次自动登录<span class="confirm2"
+                            onclick="login()">登录</span></label>
+                </div>
+                <p class="reg"><a href="./regist.html">注册新账号</a><a
+                        href="http://www.jiguo.com/user/passwd.html">忘记密码？</a></p>
+                <div class="del2">×</div>
+            </form>
+            <div class="other">
+                <p>社交网络账号登录</p>
+                <img src="./img/img/qrcode.png" alt="">
+                <a
+                    href="https://api.weibo.com/oauth2/authorize?client_id=592070519&redirect_uri=http%3A%2F%2Fm.jguo.com%2Fmb%2Foauth%2Fsinacallback&response_type=code###"><i
+                        class="iconfont icon-weibo"></i>微博</a>
+                <div class="line"></div>
+                <a
+                    href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101162392&redirect_uri=http://m.jguo.com/mb/oauth/qqcallback&state=fd05a6b2da475ac8cc1ec4f65e747d1b&scope=get_user_info,add_share,list_album,add_album,upload_pic,add_topic,add_one_blog,add_weibo,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idolist,add_idol,del_idol,get_tenpay_addr"><i
+                        class="iconfont icon-qq"></i>QQ</a>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部大图 -->
+    <div class="topImg">
+        <div class="topImgContext">
+            <p>幻响小贝HiFi2.1音箱</p>
+            <p><span class="topImgCount">126人申请</span><span>￥599</span><span>20台</span></p>
+            <p class="countTime">申请时间剩余：13天5小时37分钟</p>
+            <p><button class="topImgApply">立即申请</button></p>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <!-- 标题 -->
+    <div class="title">热门试用</div>
+    <script src="//unpkg.com/vue@2/dist/vue.js"></script>
+    <script src="//unpkg.com/element-ui@2.15.14/lib/index.js"></script>
+    <div id="app">
+        <template>
+            <el-carousel :interval="5000" trigger="click" height="288px" arrow="always">
+                <!-- 第一页  -->
+                <el-carousel-item v-for="item in 1" :key="item">
+                    <div class="appCenter">
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot1.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">体验师专享</div>
+                            <img src="./img/img/hot2.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot3.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot4.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                    </div>
+                </el-carousel-item>
+                <!-- 第二页 -->
+                <el-carousel-item v-for="item in 1" :key="item">
+                    <div class="appCenter">
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot5.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">体验师专享</div>
+                            <img src="./img/img/hot6.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot7.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot8.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                    </div>
+                </el-carousel-item>
+                <!-- 第三页 -->
+                <el-carousel-item v-for="item in 1" :key="item">
+                    <div class="appCenter">
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot9.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">体验师专享</div>
+                            <img src="./img/img/hot10.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot11.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                        <div class="appIn">
+                            <div class="lab">首发</div>
+                            <img src="./img/img/hot12.jpg" alt="">
+                            <div class="appContext">
+                                <p>巴慕达The Toaster烤面包机</p>
+                                <p><span>2032</span><span>20台</span></p>
+                                <p><span>1392</span>申请</p>
+                                <p>剩余时间2天</p>
+                            </div>
+                        </div>
+                    </div>
+                </el-carousel-item>
+            </el-carousel>
+        </template>
+    </div>
+
+    <!-- 报告精选 -->
+    <div class="report">
+        <p>报告精选 <a href="./report/index.html" class="more">查看更多<img src="./img/css/img/readMore.png" alt=""></a></p>
+        <div class="reportIn">
+            <div class="reportInItem">
+                <img src="./img/img/bg1.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>7</span>
+                        </span>
+                    </p>
+                    <div class="text"></div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/bg3.jpg" alt="">
+                <div class="itemContext">
+                    <p>怎么骑都不会累的智能自行车:云马C1试骑体验</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>5</span>
+                        </span>
+                    </p>
+                    <div class="text">
+                    </div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/bg1.jpg" alt="">
+                <div class="itemContext">
+                    <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>6</span>
+                        </span>
+                    </p>
+                    <div class="text">
+                    </div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/bg4.jpg" alt="">
+                <div class="itemContext">
+                    <p>风光大片信手拈来! vivo X6Plus不只是快，还是一台拍照利器</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>87</span>
+                        </span>
+                    </p>
+                    <div class="text">
+                    </div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/bg5.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>34</span>
+                        </span>
+                    </p>
+                    <div class="text">
+                    </div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/bg6.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>36</span>
+                        </span>
+                    </p>
+                    <div class="text">
+                    </div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/bg7.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>45</span>
+                        </span>
+                    </p>
+                    <div class="text">
+                    </div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/bg8.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>● 苏苏
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like2"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                    <div class="text">
+                    </div>
+                    <div class="comDel">×</div>
+                    <input type="text" name="" id="comment" placeholder="善语结善缘，恶语伤人心">
+                    <button>发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导购精选 -->
+    <div class="guide">
+        <p>导购精选 <a href="./guid/guidnew.html" class="more">查看更多<img src="./img/css/img/readMore.png" alt=""></a></p>
+        <div class="guideIn">
+            <div class="guideInItem">
+                <img src="./img/img/g1.jpg" alt="">
+                <img src="./img/css/img/listbg.jpg" alt="">
+                <div class="guideInItemContext">
+                    <p>花万元把蜗居秒变“豪宅”?这12件家具就能帮你办到</p>
+                    <p>
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count3"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="guideInItem">
+                <img src="./img/img/g2.jpg" alt="">
+                <img src="./img/css/img/listbg.jpg" alt="">
+                <div class="guideInItemContext">
+                    <p>到底有没有完美的iPhone手机配件，答案都在这里</p>
+                    <p>
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count3"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="guideInItem">
+                <img src="./img/img/g3.jpg" alt="">
+                <img src="./img/css/img/listbg.jpg" alt="">
+                <div class="guideInItemContext">
+                    <p>2016，这8支钢笔够你装逼—整年</p>
+                    <p>
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count3"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="guideInItem">
+                <img src="./img/img/g4.jpg" alt="">
+                <img src="./img/css/img/listbg.jpg" alt="">
+                <div class="guideInItemContext">
+                    <p>他用12年找—把完美剃须刀，给你2万字终极购买指南</p>
+                    <p>
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count3"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 发现酷玩 -->
+    <div class="play">
+        <p>发现酷玩 <a href="./play/new.html" class="more">查看更多<img src="./img/css/img/readMore.png" alt=""></a></p>
+        <div class="playIn">
+            <div class="reportInItem">
+                <img src="./img/img/k1.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k2.jpg" alt="">
+                <div class="itemContext">
+                    <p>怎么骑都不会累的智能自行车:云马C1试骑体验</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k3.jpg" alt="">
+                <div class="itemContext">
+                    <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k4.jpg" alt="">
+                <div class="itemContext">
+                    <p>风光大片信手拈来! vivo X6Plus不只是快，还是一台拍照利器</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan01.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan02.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan03.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan04.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k1.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k2.jpg" alt="">
+                <div class="itemContext">
+                    <p>怎么骑都不会累的智能自行车:云马C1试骑体验</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k3.jpg" alt="">
+                <div class="itemContext">
+                    <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k4.jpg" alt="">
+                <div class="itemContext">
+                    <p>风光大片信手拈来! vivo X6Plus不只是快，还是一台拍照利器</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem reportInItem1">
+                <img src="./img/img/kuwan01.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem reportInItem1">
+                <img src="./img/img/kuwan02.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem reportInItem1">
+                <img src="./img/img/kuwan03.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem reportInItem1">
+                <img src="./img/img/kuwan04.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k4.jpg" alt="">
+                <div class="itemContext">
+                    <p>风光大片信手拈来! vivo X6Plus不只是快，还是一台拍照利器</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan01.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan02.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan03.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/kuwan04.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k1.jpg" alt="">
+                <div class="itemContext">
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗?</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k2.jpg" alt="">
+                <div class="itemContext">
+                    <p>怎么骑都不会累的智能自行车:云马C1试骑体验</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reportInItem">
+                <img src="./img/img/k3.jpg" alt="">
+                <div class="itemContext">
+                    <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                    <p>￥599
+                        <span>
+                            <span class="like"><i class="iconfont icon-dianzan_kuai"></i><span
+                                    class="count">3</span></span>
+                            <span class="like3"><i class="iconfont icon-pinglun"></i><span
+                                    class="count2"></span>9</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="playBottom"><a href="javascript:void(0);"><img src="./img/css/img/more.png" alt="">点击加载更多</a>
+            </div>
+            <div class="playBottomload"><a href="javascript:void(0);"><img src="./img/css/img/loading-icon.gif"
+                        alt="">正在加载中</a>
+            </div>
+            <div class="playBottom1"><a href="javascript:void(0);"><img src="./img/css/img/more.png" alt="">没有了哟！</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div class="toTop"></div>
+
+    <!-- 底部 -->
+    <iframe src="./footer.html" frameborder="0" width="100%" height="361px" scrolling="no"></iframe>
+</body>
+
+</html>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="./js/logon.js"></script>
+<script src="./js/regist.js"></script>
+<script src="./js/myCookie.js"></script>
+<script src="./use/js/apply.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    new Vue().$mount('#app')
+</script>

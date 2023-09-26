@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体验报告-最热</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="../css/header.min.css">
+    <link rel="stylesheet" href="../css/logon.min.css">
+    <style>
+        header li:nth-of-type(1) {
+            color: inherit;
+        }
+
+        header li:nth-of-type(5) {
+            color: #fe5341;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="headerIn"><a href="#"><img src="../img/img/logonew.png" alt=""></a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="javascript:void();">酷玩</a></li>
+                <li><a href="../guid/guidnew.html">导购</a></li>
+                <li><a href="../use/public.html">试用</a></li>
+                <li><a href="#">报告</a></li>
+            </ul>
+            <a href="../regist.html">注册</a>
+            <a href="#" class="logon">登录</a>
+            <a href="#"></a>
+            <div class="account"><img src="../img/img/11101Q55255-2-1200.jpg" alt=""></div>
+        </div>
+    </header>
+
+    <div class="articlen">
+        <!-- 体验报告-头部 -->
+        <div class="play-top wrap">
+
+            <h1>体检报告</h1>
+            <div class="play-nav">
+                <a href="./index.html">最新</a>
+                <a href="javascript:;" class="on">最热</a>
+            </div>
+        </div>
+        <!-- <article class="articlen"> -->
+
+        <!-- 体检报告 内容部分 -->
+        <div class="report-box">
+            <div class="report">
+                <!-- 体检报告 内容部分 左边 -->
+                <div class="listInfo">
+                    <ul class="myDiv vray2">
+
+                    </ul>
+                    <div class="playMore">
+                        <a href="javascript:;" class="more-btn">点击加载更多</a>
+                        <a href="javascript:;" class="more-btn">正在加载中</a>
+                    </div>
+                </div>
+                <!-- 体检报告 内容部分 右边 -->
+
+                <div class="listR">
+                    <div class="ty">
+                        <h2>极果体验师</h2>
+                        <img src="../img/img/tiyanImg.jpg" alt="">
+                        <div class="info">
+                            <h5>福利</h5>
+                            <p>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</p>
+                            <h5>要求</h5>
+                            <p>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</p>
+                            <h5>申请</h5>
+                            <p>
+                                1. 关注极果公众号：jguojguo<br>
+                                （或扫描下方二维码）<br>
+                                2. 在公众号内回复：体验师
+                            </p>
+                        </div>
+                    </div>
+                    <div class="guanzhu">
+                        <h2>关注我们</h2>
+                        <div class="imgBox">
+                            <img src="../img/img/myCode.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div class="toTop"></div>
+
+    <!-- 底部 -->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="361px" scrolling="no"></iframe>
+
+</body>
+
+</html>
+<script src="./js/index.js"></script>
+<script src="./js/new.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/logon.js"></script>
+<script>
+    // 登录后
+    var account = document.querySelector('.account');
+    var une = localStorage.getItem('username');
+    if (une) {
+        console.log(une);
+        account.innerHTML += une;
+        account.style.display = 'block';
+    } else {
+        account.style.display = 'none';
+    }
+</script>

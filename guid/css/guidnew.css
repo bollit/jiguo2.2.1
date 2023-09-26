@@ -1,0 +1,79 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 头部 */
+header li:nth-of-type(1), header li:nth-of-type(2) {
+  color: black;
+}
+
+header li:nth-of-type(3) {
+  color: #fe5341;
+}
+
+/* 正文部分 */
+.guide {
+  height: 1227px;
+}
+
+.guide .guideIn {
+  position: relative;
+  height: 1066px;
+}
+
+.guide .guideInItem {
+  margin-bottom: 35px;
+}
+
+.guide .guideInItem:hover img:nth-of-type(1) {
+  animation: appIn 2s linear infinite;
+}
+
+@keyframes appIn {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.guide .guideInItem .guideInItemContext p {
+  /* 文本超出部分变省略号 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guide .playBottom,
+.guide .playBottomload {
+  position: absolute;
+  bottom: -86px;
+  width: 1000px;
+  height: 86px;
+  margin: auto;
+  text-align: center;
+  color: #fe5341;
+  padding: 10px 0 50px;
+}
+
+.guide .playBottom img,
+.guide .playBottomload img {
+  margin-right: 8px;
+}
+
+.guide .playBottomload {
+  display: none;
+}
+
+.guide .playBottomload img {
+  margin-right: 10px;
+  vertical-align: top;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/regist.min.css">
+    <link rel="stylesheet" href="./css/header.min.css">
+    <link rel="stylesheet" href="./css/footer.min.css">
+    <link rel="stylesheet" href="./css/logon.min.css">
+    <link rel="icon" href="./img/img/logo.ico">
+    <link rel="stylesheet" href="./font_4264626_gim84ncuwbm/iconfont.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="headerIn"><a href="#"><img src="./img/img/logonew.png" alt=""></a>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./play/new.html">酷玩</a></li>
+                <li><a href="./guid/guidnew.html">导购</a></li>
+                <li><a href="./use/public.html">试用</a></li>
+                <li><a href="./report/index.html">报告</a></li>
+            </ul>
+            <a href="#">注册</a>
+            <a href="#" class="logon">登录</a>
+            <a href="#"></a>
+            <div class="account"><img src="./img/img/11101Q55255-2-1200.jpg" alt=""></div>
+        </div>
+    </header>
+
+    <!-- 登录界面 -->
+    <div class="logonUi">
+        <div class="logonUiIn2">
+            <form action="">
+                <p>极果账号登录</p>
+                <label for=""><i class="iconfont icon-shouji"></i><input type="text" id="username1"
+                        placeholder="手机号"></label>
+                <label for=""><i class="iconfont icon-mima"></i><input type="password" id="psd"
+                        placeholder="密码"></label>
+                <div class="div">
+                    <label for=""><input type="checkbox" id="isrember">下次自动登录<span class="confirm2"
+                            onclick="login()">登录</span></label>
+                </div>
+                <p class="reg"><a href="./regist.html">注册新账号</a><a
+                        href="http://www.jiguo.com/user/passwd.html">忘记密码？</a></p>
+                <div class="del2">×</div>
+            </form>
+            <div class="other">
+                <p>社交网络账号登录</p>
+                <img src="./img/img/qrcode.png" alt="">
+                <a
+                    href="https://api.weibo.com/oauth2/authorize?client_id=592070519&redirect_uri=http%3A%2F%2Fm.jguo.com%2Fmb%2Foauth%2Fsinacallback&response_type=code###"><i
+                        class="iconfont icon-weibo"></i>微博</a>
+                <div class="line"></div>
+                <a
+                    href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101162392&redirect_uri=http://m.jguo.com/mb/oauth/qqcallback&state=fd05a6b2da475ac8cc1ec4f65e747d1b&scope=get_user_info,add_share,list_album,add_album,upload_pic,add_topic,add_one_blog,add_weibo,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idolist,add_idol,del_idol,get_tenpay_addr"><i
+                        class="iconfont icon-qq"></i>QQ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 正文部分 -->
+    <article>
+        <div class="articleIn">
+            <p>注册极果</p>
+            <form action="" onsubmit="return form()">
+                <div class="notice notice1">请输入正确的手机号！</div>
+                <input type="text" id="number" placeholder="请输入登录手机号">
+                <div class="notice notice2">请输入正确的图形验证码！</div>
+                <input type="text" id="code" placeholder="请输入图片校验码"><img src="./img/img/imgCode.jpg" alt="">
+                <div class="notice notice3">请输入正确的验证码</div>
+                <input type="text" id="numCode" placeholder="请输入4位数字验证码">
+                <div class="getCode" id="myButton" href="#">获取验证码</div>
+                <div class="notice notice4">请输入正确的用户名！由字母、数字或下划线组成的字符串，长度在3到10之间（包含3和10），至少包含一个字母</div>
+                <input type="username" id="username" placeholder="请输入用户名">
+                <div class="notice notice5">请输入正确的密码！至少一个小写字母、一个大写字母和一个数字的字符串，且长度在6到20之间（包含6和20）</div>
+                <input type="password" id="password" placeholder="请输入新密码">
+                <div class="notice notice6">两次密码不相同！</div>
+                <input type="password" id="repassword" placeholder="确认新密码">
+                <input type="submit" class="submit" value="立即注册">
+            </form>
+        </div>
+    </article>
+
+    <!-- 返回顶部 -->
+    <div class="toTop"></div>
+
+    <!-- 底部 -->
+    <iframe src="./footer.html" frameborder="0" width="100%" height="361px" scrolling="no"></iframe>
+</body>
+
+</html>
+<!-- <script src="./js/index.js"></script> -->
+<script src="./js/logon.js"></script>
+<script src="./js/myCookie.js"></script>
+<script src="./js/regist.js"></script>

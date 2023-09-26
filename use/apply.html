@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大众-申请中</title>
+    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="../css/header.min.css">
+    <link rel="stylesheet" href="../play/css/new.min.css">
+    <link rel="stylesheet" href="./css/guidnew.min.css">
+    <link rel="stylesheet" href="./css/public.min.css">
+    <link rel="stylesheet" href="./css/apply.min.css">
+    <link rel="icon" href="../img/img/logo.ico">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="headerIn"><a href="#"><img src="../img/img/logonew.png" alt=""></a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../play/new.html">酷玩</a></li>
+                <li><a href="../guid/guidnew.html">导购</a></li>
+                <li><a href="javascript:void();">试用</a></li>
+                <li><a href="../report/index.html">报告</a></li>
+            </ul>
+            <a href="../regist.html">注册</a>
+            <a href="#" class="logon">登录</a>
+            <a href="#"></a>
+            <div class="account"><img src="../img/img/11101Q55255-2-1200.jpg" alt=""></div>
+        </div>
+    </header>
+
+    <!-- 正文标题 -->
+    <h1>免费试用</h1>
+
+    <!-- 正文导航栏 -->
+    <nav>
+        <a href="javascript:void();">大众试用</a>
+        <a href="./experiencer.html">体验师专享</a>
+    </nav>
+
+    <!-- 提醒登录界面 -->
+    <div class="logonUi">
+        <div class="logonUiIn">
+            <a href="#">请先登录！</a>
+            <div class="del">取消</div>
+            <p class="confirm">登录</p>
+        </div>
+
+        <!-- 登录页面 -->
+        <div class="logonUiIn2">
+            <form action="">
+                <p>极果账号登录</p>
+                <label for=""><input type="text" placeholder="手机号"></label>
+                <label for=""><input type="password" placeholder="密码"></label>
+                <div class="div">
+                    <label for=""><input type="checkbox">下次自动登录<span class="confirm2">登录</span></label>
+                </div>
+                <p class="reg"><a href="../regist.html">注册新账号</a><a href="">忘记密码？</a></p>
+                <div class="del2">×</div>
+            </form>
+            <div class="other">
+                <p>社交网络账号登录</p>
+                <img src="../img/img/qrcode.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 正文部分 -->
+    <div class="itemNavOut">
+        <div class="itemNav">
+            <a href="./public.html">全部</a>
+            <a href="javascript:void();" class="determine">申请中</a>
+            <a href="./using.html">使用中</a>
+            <a href="./end.html">已结束</a>
+        </div>
+    </div>
+    <article>
+        <div class="articleIn">
+            <div class="appCenter">
+                <div class="appIn">
+                    <div class="lab">首发</div>
+                    <img src="../img/img/hot1.jpg" alt="">
+                    <div class="appContext">
+                        <p>巴慕达The Toaster烤面包机</p>
+                        <p><span>2032</span><span>20台</span></p>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="appIn">
+                    <div class="lab">体验师专享</div>
+                    <img src="../img/img/hot2.jpg" alt="">
+                    <div class="appContext">
+                        <p>巴慕达The Toaster烤面包机</p>
+                        <p><span>2032</span><span>20台</span></p>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="appIn">
+                    <div class="lab">首发</div>
+                    <img src="../img/img/hot3.jpg" alt="">
+                    <div class="appContext">
+                        <p>巴慕达The Toaster烤面包机</p>
+                        <p><span>2032</span><span>20台</span></p>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="appIn">
+                    <div class="lab">首发</div>
+                    <img src="../img/img/hot4.jpg" alt="">
+                    <div class="appContext">
+                        <p>巴慕达The Toaster烤面包机</p>
+                        <p><span>2032</span><span>20台</span></p>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+
+                <!-- 底部加载 -->
+                <div class="playBottom"><a href="javascript:void(0);"><img src="../img/css/img/more.png"
+                            alt="">已全部展示</a>
+                </div>
+                <div class="playBottomload"><a href="javascript:void(0);"><img src="../img/css/img/loading-icon.gif"
+                            alt="">正在加载中</a></div>
+            </div>
+        </div>
+    </article>
+
+    <!-- 返回顶部 -->
+    <div class="toTop"></div>
+
+    <!-- 底部 -->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="361px" scrolling="no"></iframe>
+</body>
+
+</html>
+<script src="../js/index.js"></script>
+<script src="./js/guidnew.js"></script>
+<script src="./js/public.js"></script>
+<script src="./js/apply.js"></script>
+<!-- <script src="../js/logon.js"></script> -->
+<script>
+    // 登录后
+    var account = document.querySelector('.account');
+    var une = localStorage.getItem('username');
+    if (une) {
+        console.log(une);
+        account.innerHTML += une;
+        account.style.display = 'block';
+    } else {
+        account.style.display = 'none';
+    }
+</script>

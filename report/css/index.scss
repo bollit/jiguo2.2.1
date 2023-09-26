@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clearFix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.articlen {
+
+    .wrap {
+        width: 1000px;
+        margin: 0 auto;
+
+        h1 {
+            text-align: center;
+            padding: 34px 0 30px 0;
+            font-size: 40px;
+            font-weight: normal;
+        }
+
+        .play-nav {
+            text-align: center;
+            line-height: 45px;
+
+            .on {
+                color: #fe5431;
+                border-bottom: 4px #fe5431 solid;
+                padding-bottom: 8px;
+            }
+
+            a {
+                display: inline-block;
+                padding-bottom: 12px;
+                width: 165px;
+                font-size: 18px;
+                color: #A3A4A6;
+            }
+        }
+    }
+
+    .report-box {
+        width: 100%;
+        background-color: #f7f7f7;
+        overflow: hidden;
+
+        .report {
+            width: 1000px;
+            margin: 0 auto;
+            padding-top: 25px;
+            display: block;
+
+            // 体检报告 内容部分 左边
+            .listInfo {
+                width: 700px;
+                float: left;
+
+                ul {
+                    .li {
+                        border-radius: 6px;
+                        border: 1px solid #e6e9e9;
+                        margin-bottom: 13px;
+                        position: relative;
+
+                        a {
+                            width: 700px;
+                            height: 412px;
+                            display: block;
+
+                            img {
+                                width: 700px;
+                                height: 412px;
+                                border-radius: 6px;
+                            }
+
+
+                            .infor {
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 100%;
+                                box-sizing: border-box;
+                                padding: 10px 22px;
+                                background: rgba(255, 255, 255, .9);
+
+                                p {
+                                    font-size: 18px;
+                                    padding: 9px 0 12px 0;
+                                    font-weight: normal;
+                                }
+
+                                .btm {
+                                    color: #a3a3a3;
+                                    font-size: 13px;
+                                    padding: 16px 0 11px 0;
+
+                                    .left {
+                                        float: left;
+
+                                        .avt {
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 50%;
+                                            background: url('../../img/css/img/tx.jpg') no-repeat;
+                                        }
+
+                                        .name {
+                                            color: #fe695a;
+                                        }
+
+                                        span {
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin-right: 5px;
+                                        }
+                                    }
+
+                                    .right {
+                                        float: right;
+
+                                        .zan {
+                                            background: url("../../img/css/img/zan.png") no-repeat left center;
+                                        }
+
+                                        .look {
+                                            background: url("../../img/css/img/reply.png") no-repeat left center;
+                                        }
+
+                                        span {
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            padding-left: 14px;
+                                            margin-left: 3px;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        a:hover img {
+                            animation: fade 1.2s ease-in infinite both;
+                        }
+
+                        @keyframes fade {
+                            0% {
+                                opacity: 1;
+                            }
+
+                            50% {
+                                opacity: 0.6;
+                            }
+
+                            100% {
+                                opacity: 1;
+                            }
+
+                        }
+                    }
+
+                    .lis {
+                        border-radius: 6px;
+                        border: 1px solid #e6e9e9;
+                        margin-bottom: 13px;
+                        position: relative;
+                        overflow: hidden;
+
+                        a {
+                            display: block;
+
+                            .click-look {
+                                text-align: center;
+                                height: 48px;
+                                line-height: 48px;
+                                font-size: 14px;
+                                color: #a3a3a3;
+                            }
+                        }
+                    }
+                }
+
+                .playMore {
+                    padding-top: 22px;
+                    color: #a3a3a3;
+                    text-align: center;
+                    font-size: 16px;
+                    padding-bottom: 50px;
+
+                    .more-btn {
+                        background: url(../../img/css/img/more.png) no-repeat left center;
+                        background-size: 16px;
+                        color: #fe5341;
+                        padding-left: 24px;
+
+
+                    }
+
+                    .more-btn:nth-of-type(2) {
+                        width: 104px;
+                        height: 22px;
+                        margin: 0 auto;
+                        background: url(../../img/css/img/loading-icon.gif) no-repeat left center;
+                        background-size: 16px;
+                        color: #fe5341;
+                        padding-left: 24px;
+                        display: none;
+                    }
+
+                }
+            }
+
+            // 体检报告 内容部分 右边
+
+            .listR {
+                width: 270px;
+                float: right;
+                // background-color: aqua;
+
+                .ty {
+                    h2 {
+                        position: relative;
+                        font-size: 18px;
+                        height: 25px;
+                        line-height: 25px;
+                        padding-left: 30px;
+                        color: #474747;
+                    }
+
+                    h2:after {
+                        position: absolute;
+                        content: "";
+                        width: 6px;
+                        height: 25px;
+                        left: 0;
+                        top: 0;
+                        background: #fe5341;
+                    }
+
+                    img {
+                        margin-top: 20px;
+                    }
+
+                    .info {
+                        margin: 10px 0 20px 0;
+
+                        h5 {
+                            color: #474747;
+                            font-size: 16px;
+                            padding: 5px 0;
+                        }
+
+                        p {
+                            color: #a3a3a3;
+                            font-size: 14px;
+                        }
+                    }
+
+
+                }
+
+                .guanzhu {
+                    padding-top: 40px;
+
+                    h2 {
+                        position: relative;
+                        font-size: 18px;
+                        height: 25px;
+                        line-height: 25px;
+                        padding-left: 30px;
+                        color: #474747;
+                    }
+
+                    h2:after {
+                        position: absolute;
+                        content: "";
+                        width: 6px;
+                        height: 25px;
+                        left: 0;
+                        top: 0;
+                        background: #fe5341;
+                    }
+
+                    .imgBox {
+
+                        margin-top: 20px;
+
+                    }
+                }
+            }
+
+        }
+
+        .report:nth-of-type(2) {
+
+            display: none;
+            // z-index: 2;
+        }
+
+
+    }
+}

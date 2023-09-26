@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导购-最热</title>
+    <link rel="stylesheet" href="../css/header.min.css">
+    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="../play/css/new.min.css">
+    <link rel="stylesheet" href="../play/css/hot.min.css">
+    <link rel="stylesheet" href="./css/guidnew.min.css">
+    <link rel="stylesheet" href="./css/guidhot.min.css">
+    <link rel="stylesheet" href="../css/logon.min.css">
+    <link rel="icon" href="../img/img/logo.ico">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="headerIn"><a href="#"><img src="../img/img/logonew.png" alt=""></a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../play/new.html">酷玩</a></li>
+                <li><a href="javascript:void();">导购</a></li>
+                <li><a href="../use/public.html">试用</a></li>
+                <li><a href="../report/index.html">报告</a></li>
+            </ul>
+            <a href="../regist.html">注册</a>
+            <a href="#" class="logon">登录</a>
+            <a href="#"></a>
+            <div class="account"><img src="../img/img/11101Q55255-2-1200.jpg" alt=""></div>
+        </div>
+    </header>
+
+    <!-- 登录界面 -->
+    <div class="logonUi">
+        <div class="logonUiIn2">
+            <form action="">
+                <p>极果账号登录</p>
+                <label for=""><input type="text" placeholder="手机号"></label>
+                <label for=""><input type="password" placeholder="密码"></label>
+                <div class="div">
+                    <label for=""><input type="checkbox">下次自动登录<span class="confirm2">登录</span></label>
+                </div>
+                <p class="reg"><a href="../regist.html">注册新账号</a><a href="">忘记密码？</a></p>
+                <div class="del2">×</div>
+            </form>
+            <div class="other">
+                <p>社交网络账号登录</p>
+                <img src="../img/img/qrcode.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 正文标题 -->
+    <h1>导购清单</h1>
+
+    <!-- 正文导航栏 -->
+    <nav>
+        <a href="./guidnew.html">最新</a>
+        <a href="javascript:void();">最热</a>
+    </nav>
+
+    <!-- 正文部分 -->
+    <div class="guide">
+        <p> </p>
+        <div class="guideIn">
+            <div class="guideInItem">
+                <img src="../img/img/g4.jpg" alt="">
+                <img src="../img/css/img/listbg.jpg" alt="">
+                <div class="guideInItemContext">
+                    <p>他用12年找—把完美剃须刀，给你2万字终极购买指南</p>
+                    <p>
+                        <span>
+                            <img src="../img/css/img/zan.png" alt="">3
+                            <img src="../img/css/img/reply.png" alt="">3
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="playBottom"><a href="javascript:void(0);"><img src="../img/css/img/more.png" alt="">已全部展示</a>
+            </div>
+            <div class="playBottomload"><a href="javascript:void(0);"><img src="../img/css/img/loading-icon.gif"
+                        alt="">正在加载中</a></div>
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <div class="toTop"></div>
+
+    <!-- 底部 -->
+    <iframe src="../footer.html" frameborder="0" width="100%" height="361px" scrolling="no"></iframe>
+</body>
+
+</html>
+<script src="./js/guidhot.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/logon.js"></script>
+<script>
+    // 登录后
+    var account = document.querySelector('.account');
+    var une = localStorage.getItem('username');
+    if (une) {
+        console.log(une);
+        account.innerHTML += une;
+        account.style.display = 'block';
+    } else {
+        account.style.display = 'none';
+    }
+</script>

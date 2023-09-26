@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// 试用流程
+.useLc {
+    background: #f0f0f0;
+    height: 102px;
+    padding: 20px 0;
+    color: #333;
+
+    .wrap {
+        width: 1000px;
+        margin: 0 auto;
+
+        .lcTit {
+            float: left;
+            font-size: 20px;
+            width: 60px;
+            height: 64px;
+            line-height: 32px;
+            padding-left: 11px;
+            border-left: 6px #fe5341 solid;
+        }
+
+        .lcList {
+            float: left;
+            color: #737373;
+
+            dt {
+                width: 188px;
+                text-align: center;
+                float: left;
+                font-size: 12px;
+
+                img {
+                    display: block;
+                    // width: 50%;
+                    height: 35px;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+            }
+
+            dt:nth-child(1) p {
+                display: inline-block;
+                border-bottom: 2px solid #fe5341;
+            }
+        }
+    }
+}
+
+// 试用报告详情
+.useIntro {
+    // margin-top: 25px;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    // 左边
+    .useDetial {
+        margin-top: 25px;
+        font-size: 16px;
+        width: 700px;
+        float: left;
+
+        .title {
+            padding: 15px 0 13px 0;
+            font-size: 20px;
+            color: #474747;
+
+            p {
+                padding: 3px 0 3px 16px;
+                border-left: 6px #fe5341 solid;
+            }
+        }
+
+        .text {
+            p {
+                margin: 4px 0;
+            }
+
+            img {
+                margin: 9px 0;
+            }
+
+            .little {
+                font-weight: bold;
+                color: rgb(0, 112, 192);
+            }
+
+            .red {
+                color: red;
+                font-weight: bold;
+            }
+
+        }
+
+
+    }
+
+    // 右边
+    .listR {
+        margin-top: 25px;
+        width: 270px;
+        float: right;
+
+        .gm {
+            color: #474747;
+
+            h2 {
+                height: 25px;
+                line-height: 25px;
+                font-size: 18px;
+                padding-left: 28px;
+                border-left: 6px #fe5341 solid;
+
+
+            }
+
+            .money {
+                color: #fe5341;
+                font-size: 40px;
+                padding: 20px 0 15px;
+
+            }
+
+            .buyBtn {
+                display: block;
+                color: #fff;
+                background: #fe5341;
+                height: 48px;
+                border-radius: 5px;
+                line-height: 48px;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .resource {
+                color: #a3a3a3;
+                margin: 10px 0;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        .ty {
+            h2 {
+                position: relative;
+                font-size: 18px;
+                height: 25px;
+                line-height: 25px;
+                padding-left: 30px;
+                color: #474747;
+            }
+
+            h2:after {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 25px;
+                left: 0;
+                top: 0;
+                background: #fe5341;
+            }
+
+            img {
+                margin-top: 20px;
+            }
+
+            .info {
+                margin: 10px 0 20px 0;
+
+                h5 {
+                    color: #474747;
+                    font-size: 16px;
+                    padding: 5px 0;
+                }
+
+                p {
+                    color: #a3a3a3;
+                    font-size: 14px;
+                }
+            }
+
+
+        }
+
+        .guanzhu {
+            padding-top: 40px;
+
+            h2 {
+                position: relative;
+                font-size: 18px;
+                height: 25px;
+                line-height: 25px;
+                padding-left: 30px;
+                color: #474747;
+            }
+
+            h2:after {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 25px;
+                left: 0;
+                top: 0;
+                background: #fe5341;
+            }
+
+            .imgBox {
+
+                margin-top: 20px;
+
+            }
+        }
+
+
+
+    }
+}
+
+// 热门试用
+.useBtm {
+    margin-bottom: 25px;
+    width: 1000px;
+    margin: 0 auto;
+
+    .title {
+        position: relative;
+
+        .more {
+            font-weight: normal;
+            position: absolute;
+            right: 0;
+            top: 22px;
+            padding-right: 17px;
+            font-size: 14px;
+            background: url(../../img/css/img/readMore.png) no-repeat right 4px;
+            color: #fd6959;
+        }
+    }
+
+    .appCenter {
+        position: relative;
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        cursor: pointer;
+
+        .appIn {
+            position: relative;
+            width: 220px;
+            height: 285px;
+            border-radius: 5px;
+            float: left;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border: 1px solid #E6E9E9;
+
+            &:nth-of-type(16) {
+                display: none;
+            }
+
+            .lab {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 40px;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                background-color: #fe5341;
+                z-index: 2;
+                border-radius: 0 5px 0 8px;
+                color: #fff;
+                font-size: 12px;
+            }
+
+            &:nth-of-type(2) {
+                .lab {
+                    width: 76px;
+                    background: #fbf4cb;
+                    color: #c4a96a;
+                }
+            }
+
+            /* 鼠标悬浮在模块上时变色动画 */
+            &:hover img {
+                animation: fade 1.2s ease-in infinite both;
+            }
+
+            @keyframes fade {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.6;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+
+            }
+
+            &:nth-of-type(4) {
+                margin: 0;
+            }
+
+            img {
+                display: block;
+                width: 220px;
+                height: 130px;
+            }
+
+            .appContext {
+                width: 220px;
+                padding: 8px 8px 14px;
+
+                p {
+                    text-align: center;
+
+                    &:nth-of-type(1) {
+                        height: 48px;
+                        font-weight: bolder;
+
+                        &:nth-of-type(1) {
+                            /* 文本超出部分变省略号 */
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        span {
+                            display: inline-block;
+                            width: 50px;
+                            height: 25px;
+                            line-height: 25px;
+                            text-align: center;
+                            border: 1px solid #fe5341;
+                            border-radius: 5px;
+                            font-size: 12px;
+                            color: #fe5341;
+
+                            &:nth-of-type(2) {
+                                width: 48px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        height: 28px;
+                        line-height: 28px;
+
+                        span {
+                            color: #fe5341;
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        color: #fe5341;
+                    }
+                }
+            }
+
+            &:nth-of-type(2)>.appContext>p {
+                &:nth-of-type(2)>span {
+                    border: 1px solid #80c269;
+                    color: #80c269;
+                }
+
+                &:nth-of-type(4) {
+                    color: #80c269;
+                }
+            }
+        }
+
+    }
+}
