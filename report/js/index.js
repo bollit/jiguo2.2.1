@@ -23,7 +23,7 @@ function vray1() {
 
                     str = `
                     <li class="li">
-                        <a href="#">
+                        <a href="../guid/detail.html">
                             <img  src="${Data[i].img}">
                             <div class="infor">
                                 <p>${Data[i].text}</p>
@@ -78,7 +78,7 @@ function vray2() {
 
                     str = `
                     <li class="li">
-                        <a href="#">
+                        <a href="../guid/detail.html">
                             <img  src="${Data[i].img}">
                             <div class="infor">
                                 <p>${Data[i].text}</p>
